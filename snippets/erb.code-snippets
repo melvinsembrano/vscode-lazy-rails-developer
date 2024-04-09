@@ -13,6 +13,15 @@
     ],
     "description": "erb output"
   },
+  "erbl": {
+    "prefix": "erbl",
+    "body": [
+      "<% ${1} do %>",
+      "  ${2}",
+      "<% end %>"
+    ],
+    "description": "erb block"
+  },
   "if": {
     "prefix": "if",
     "body": [
