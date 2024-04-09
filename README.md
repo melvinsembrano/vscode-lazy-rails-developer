@@ -6,6 +6,10 @@ The Lazy Rails Developer extension is a collection of useful snippets specifical
 
 ### Ruby
 
-| Trigger | Snippet | Description |
-|---------|---------|-------------|
-| `class` | class <br>&nbsp;&nbsp;def initialize<br>&nbsp;&nbsp;end<br>end | New class |
+`class` - New Ruby class.
+```ruby
+class $1
+  def initialize
+  end
+end
+```
