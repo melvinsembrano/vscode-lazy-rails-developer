@@ -1,4 +1,18 @@
 {
+  "erb": {
+    "prefix": "erb",
+    "body": [
+      "<% ${0} %>"
+    ],
+    "description": "erb"
+  },
+  "erbo": {
+    "prefix": "erbo",
+    "body": [
+      "<%= ${0} %>"
+    ],
+    "description": "erb output"
+  },
   "if": {
     "prefix": "if",
     "body": [

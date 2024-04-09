@@ -3,6 +3,7 @@
   "displayName": "Lazy Rails Developer",
   "description": "A collection of tools and snippets for Ruby on Rails developers",
   "version": "0.0.1",
+  "publisher": "Allan M Sembrano",
   "engines": {
     "vscode": "^1.88.0"
   },
