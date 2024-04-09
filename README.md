@@ -10,6 +10,40 @@ The Lazy Rails Developer extension is a collection of useful snippets specifical
 ```ruby
 class $1
   def initialize
+    $0
+  end
+end
+```
+
+`begin` - New Ruby begin block.
+```ruby
+begin
+  $0
+end
+```
+
+`begin` - New Ruby begin block with rescue.
+```ruby
+begin
+  $0
+rescue $1
+end
+```
+
+`begin` - New Ruby begin block with rescue and ensure.
+```ruby
+begin
+  $0
+rescue $1
+ensure
+end
+```
+
+`module` - New Ruby module.
+```ruby
+module $1
+  def $2
+    $0
   end
 end
 ```
