@@ -1,4 +1,4 @@
-# lazy-rails-developer README
+# lazy-rails-developer VSCode extension
 
 This is the README for your extension "lazy-rails-developer". After writing up a brief description, we recommend including the following sections.
 
