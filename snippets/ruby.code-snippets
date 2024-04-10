@@ -86,7 +86,8 @@
   },
   "Until": {
     "prefix": [
-      "until"
+      "until",
+      "unt"
     ],
     "body": [
       "until $1",
@@ -110,7 +111,8 @@
   },
   "Each inline": {
     "prefix": [
-      "each"
+      "each",
+      "ea"
     ],
     "body": [
       "each { |$1| $0 }"
@@ -119,7 +121,9 @@
   },
   "Each block": {
     "prefix": [
-      "each"
+      "each",
+      "eachb",
+      "eab"
     ],
     "body": [
       "each do |$1|",
@@ -139,7 +143,8 @@
   },
   "Map block": {
     "prefix": [
-      "map"
+      "map",
+      "mapb"
     ],
     "body": [
       "map do |$1|",
@@ -150,7 +155,8 @@
   },
   "Flat map inline": {
     "prefix": [
-      "flat_map"
+      "flat_map",
+      "fmap"
     ],
     "body": [
       "flat_map { |$1| $0 }"
@@ -170,7 +176,8 @@
   },
   "Select inline": {
     "prefix": [
-      "select"
+      "select",
+      "sl"
     ],
     "body": [
       "select { |$1| $0 }"
@@ -179,7 +186,8 @@
   },
   "Select block": {
     "prefix": [
-      "select"
+      "select",
+      "slb"
     ],
     "body": [
       "select do |$1|",
@@ -199,7 +207,8 @@
   },
   "Find block": {
     "prefix": [
-      "find"
+      "find",
+      "findb"
     ],
     "body": [
       "find do |$1|",
@@ -207,6 +216,27 @@
       "end"
     ],
     "description": "New Ruby find loop."
+  },
+  "Active record find": {
+    "prefix": [
+      "rfind",
+      "find",
+      "rf"
+    ],
+    "body": [
+      "find($1)"
+    ],
+    "description": "New ActiveRecord find."
+  },
+  "Active record find by": {
+    "prefix": [
+      "find_by",
+      "rfb"
+    ],
+    "body": [
+      "find_by($1)"
+    ],
+    "description": "New ActiveRecord find_by."
   },
   "Define method": {
     "prefix": [
@@ -217,11 +247,12 @@
       "  $0",
       "end"
     ],
-    "description": "New method."
+    "description": "New Ruby method."
   },
   "Define singleton method": {
     "prefix": [
-      "def"
+      "def",
+      "sdef"
     ],
     "body": [
       "def self.$1",
