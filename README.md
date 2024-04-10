@@ -89,16 +89,6 @@ find do |$1
 end
 ```
 
-`find`, `rfind`, `rf` - New ActiveRecord find.
-```ruby
-find($1)
-```
-
-`find_by`, `rfb` - New ActiveRecord find_by.
-```ruby
-find_by($1)
-```
-
 `for` - New Ruby for loop.
 ```ruby
 for $1 in $2
@@ -151,4 +141,16 @@ end
 while $1
   $0
 end
+```
+
+### ActiveRecord
+
+`find`, `rfind`, `rf` - New ActiveRecord find.
+```ruby
+find($1)
+```
+
+`find_by`, `rfb` - New ActiveRecord find_by.
+```ruby
+find_by($1)
 ```
