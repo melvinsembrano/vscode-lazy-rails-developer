@@ -1,0 +1,16 @@
+#!/bin/bash
+
+set -ex
+
+version=$(node -p "require('./package.json').version")
+
+# create github release
+echo "Creating github release v$version"
+gh release create v$version --generate-notes
+
+echo "Packaging extension"
+ npx @vscode/vsce package
+
+# publish to marketplace
+echo "Publishing to marketplace"
+npx @vscode/vsce publish -p $VSCE_TOKEN
