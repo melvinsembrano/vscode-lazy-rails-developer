@@ -6,7 +6,7 @@ The Lazy Rails Developer extension is a collection of useful snippets specifical
 
 ### Ruby
 
-`class` - New Ruby class.
+`class`, `cla` - New Ruby class.
 ```ruby
 class $1
   def initialize
@@ -15,14 +15,14 @@ class $1
 end
 ```
 
-`begin` - New Ruby begin block.
+`begin`, `beg` - New Ruby begin block.
 ```ruby
 begin
   $0
 end
 ```
 
-`begin` - New Ruby begin block with rescue.
+`begin`, `begr` - New Ruby begin block with rescue.
 ```ruby
 begin
   $0
@@ -30,7 +30,7 @@ rescue $1
 end
 ```
 
-`begin` - New Ruby begin block with rescue and ensure.
+`begin`, `begrn` - New Ruby begin block with rescue and ensure.
 ```ruby
 begin
   $0
@@ -39,11 +39,18 @@ ensure
 end
 ```
 
-`module` - New Ruby module.
+`module`, `mod` - New Ruby module.
 ```ruby
 module $1
   def $2
     $0
   end
+end
+```
+
+`while`, `wh` - New Ruby while loop
+```ruby
+while $1
+  $0
 end
 ```

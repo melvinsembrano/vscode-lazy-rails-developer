@@ -1,7 +1,8 @@
 {
   "New class": {
     "prefix": [
-      "class"
+      "class",
+      "cla"
     ],
     "body": [
       "class $1",
@@ -15,7 +16,8 @@
   },
   "New module": {
     "prefix": [
-      "module"
+      "module",
+      "mod"
     ],
     "body": [
       "module $1",
@@ -29,7 +31,8 @@
   },
   "Begin block": {
     "prefix": [
-      "begin"
+      "begin",
+      "beg"
     ],
     "body": [
       "begin",
@@ -41,7 +44,8 @@
   },
   "Begin rescue block": {
     "prefix": [
-      "begin"
+      "begin",
+      "begr"
     ],
     "body": [
       "begin",
@@ -54,7 +58,8 @@
   },
   "Begin rescue ensure": {
     "prefix": [
-      "begin"
+      "begin",
+      "begrn"
     ],
     "body": [
       "begin",
@@ -68,7 +73,8 @@
   },
   "While": {
     "prefix": [
-      "while"
+      "while",
+      "wh"
     ],
     "body": [
       "while $1",
