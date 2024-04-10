@@ -100,5 +100,243 @@
       "<% end %>"
     ],
     "description": "ERB unless block"
-  }
+  },
+  "ERB Javascript include tag": {
+    "prefix": [
+      "javascript",
+      "erbjs",
+      "js"
+    ],
+    "body": [
+      "<%= javascript_include_tag '${0}' %>"
+    ],
+    "description": "ERB javascript include tag"
+  },
+  "ERB Stylesheet link tag": {
+    "prefix": [
+      "stylesheet",
+      "erbcss",
+      "css"
+    ],
+    "body": [
+      "<%= stylesheet_link_tag '${0}' %>"
+    ],
+    "description": "ERB stylesheet include tag"
+  },
+  "ERB image tag": {
+    "prefix": [
+      "image_tag",
+      "img"
+    ],
+    "body": [
+      "<%= image_tag '${0}' %>"
+    ],
+    "description": "ERB image tag"
+  },
+  "ERB picture tag": {
+    "prefix": [
+      "picture_tag",
+      "picture"
+    ],
+    "body": [
+      "<%= picture_tag '${0}' %>"
+    ],
+    "description": "ERB picture tag"
+  },
+  "ERB link to tag": {
+    "prefix": [
+      "link_to",
+      "link"
+    ],
+    "body": [
+      "<%= link_to '${1}', ${0} %>"
+    ],
+    "description": "ERB link to tag"
+  },
+  "ERB form for tag": {
+    "prefix": [
+      "form_for",
+      "form"
+    ],
+    "body": [
+      "<%= form_for ${0} do |f| %>",
+      "  $1",
+      "<% end %>"
+    ],
+    "description": "ERB form for tag"
+  },
+  "ERB form tag": {
+    "prefix": [
+      "form_tag"
+    ],
+    "body": [
+      "<%= form_tag ${0} do %>",
+      "  $1",
+      "<% end %>"
+    ],
+    "description": "ERB form tag"
+  },
+  "ERB form input tag": {
+    "prefix": [
+      "form_input",
+      "input"
+    ],
+    "body": [
+      "<%= f.input :${1} %>"
+    ],
+    "description": "ERB form input tag"
+  },
+  "ERB form text field tag": {
+    "prefix": [
+      "form_text_field",
+      "text_field"
+    ],
+    "body": [
+      "<%= f.text_field :${1} %>"
+    ],
+    "description": "ERB form text field tag"
+  },
+  "ERB form text area tag": {
+    "prefix": [
+      "form_text_area",
+      "text_area"
+    ],
+    "body": [
+      "<%= f.text_area :${1} %>"
+    ],
+    "description": "ERB form text area tag"
+  },
+  "ERB form password field tag": {
+    "prefix": [
+      "form_password_field",
+      "password_field"
+    ],
+    "body": [
+      "<%= f.password_field :${1} %>"
+    ],
+    "description": "ERB form password field tag"
+  },
+  "ERB form check box tag": {
+    "prefix": [
+      "form_check_box",
+      "check_box"
+    ],
+    "body": [
+      "<%= f.check_box :${1} %>"
+    ],
+    "description": "ERB form check box tag"
+  },
+  "ERB form radio button tag": {
+    "prefix": [
+      "form_radio_button",
+      "radio_button"
+    ],
+    "body": [
+      "<%= f.radio_button :${1} %>"
+    ],
+    "description": "ERB form radio button tag"
+  },
+  "ERB form file field tag": {
+    "prefix": [
+      "form_file_field",
+      "file_field"
+    ],
+    "body": [
+      "<%= f.file_field :${1} %>"
+    ],
+    "description": "ERB form file field tag"
+  },
+  "ERB form submit tag": {
+    "prefix": [
+      "form_submit",
+      "submit"
+    ],
+    "body": [
+      "<%= f.submit '${1}' %>"
+    ],
+    "description": "ERB form submit tag"
+  },
+  "ERB form label tag": {
+    "prefix": [
+      "form_label",
+      "label"
+    ],
+    "body": [
+      "<%= f.label :${1} %>"
+    ],
+    "description": "ERB form label tag"
+  },
+  "ERB turbo frame tag": {
+    "prefix": [
+      "turbo_frame_tag",
+      "turbo_frame",
+      "turbo"
+    ],
+    "body": [
+      "<%= turbo_frame_tag '${1}' do %>",
+      "  $0",
+      "<% end %>"
+    ],
+    "description": "ERB turbo frame tag"
+  },
+  "ERB turbo frame tag with target": {
+    "prefix": [
+      "turbo_frame_tag",
+      "turbo_frame",
+      "turbot"
+    ],
+    "body": [
+      "<%= turbo_frame_tag '${1}', target: '${2}' %>"
+    ],
+    "description": "ERB turbo frame tag with target"
+  },
+  "ERB turbo frame block": {
+    "prefix": [
+      "turbo_frame",
+      "turbo_frame_block",
+      "turbob"
+    ],
+    "body": [
+      "<%= turbo_frame_tag '${1}' do %>",
+      "  $0",
+      "<% end %>"
+    ],
+    "description": "ERB turbo frame block"
+  },
+  "ERB turbo frame with src tag": {
+    "prefix": [
+      "turbo_frame",
+      "turbo_frame_src",
+      "turbos"
+    ],
+    "body": [
+      "<%= turbo_frame_tag '${1}', src: '${2}' do %>",
+      "  $0",
+      "<% end %>"
+    ],
+    "description": "ERB turbo frame with src tag"
+  },
+  "ERB turbo frame with src block": {
+    "prefix": [
+      "turbo_frame",
+      "turbo_frame_src",
+      "turbosb"
+    ],
+    "body": [
+      "<%= turbo_frame_tag '${1}', src: '${2}' do %>",
+      "  $0",
+      "<% end %>"
+    ],
+    "description": "ERB turbo frame with src block"
+  },
+  "ERB turbo stream from": {
+    "prefix": [
+      "turbo_stream",
+      "stream"
+    ],
+    "body": [
+      "<%= turbo_stream_from $1, $2 %>"
+    ],
+    "description": "ERB turbo stream from tag"
+  },
 }
