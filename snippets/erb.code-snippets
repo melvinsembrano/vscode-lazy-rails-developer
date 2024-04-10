@@ -1,75 +1,104 @@
 {
-  "erb": {
+  "ERB tag": {
     "prefix": "erb",
     "body": [
       "<% ${0} %>"
     ],
-    "description": "erb"
+    "description": "New erb tag"
   },
-  "erbo": {
-    "prefix": "erbo",
+  "ERB output tag": {
+    "prefix": [
+      "erb",
+      "erbo",
+      "erb="
+    ],
     "body": [
       "<%= ${0} %>"
     ],
-    "description": "erb output"
+    "description": "New erb output tag"
   },
-  "erbl": {
-    "prefix": "erbl",
+  "ERB Block": {
+    "prefix": [
+      "erb",
+      "erbb"
+    ],
     "body": [
       "<% ${1} do %>",
       "  ${0}",
       "<% end %>"
     ],
-    "description": "erb block"
+    "description": "New erb block"
+  },
+  "ERB block with arguments": {
+    "prefix": [
+      "erb",
+      "erbbw"
+    ],
+    "body": [
+      "<% ${1} do |${2}| %>",
+      "  ${0}",
+      "<% end %>"
+    ],
+    "description": "New erb block with arguments"
   },
   "if": {
-    "prefix": "if",
+    "prefix": [
+      "if"
+    ],
     "body": [
       "<% if ${true} %>",
       "  $0",
       "<% end %>"
     ],
-    "description": "if .. end"
+    "description": "ERB if block"
   },
   "else": {
-    "prefix": "else",
+    "prefix": [
+      "else"
+    ],
     "body": [
       "<% else %>"
     ],
-    "description": "else"
+    "description": "ERB else tag"
   },
   "elsif": {
-    "prefix": "elsif",
+    "prefix": [
+      "elsif"
+    ],
     "body": [
       "<% elsif ${true} %>"
     ],
-    "description": "elsif"
+    "description": "ERB elsif tag"
   },
   "end": {
     "prefix": "end",
     "body": [
       "<% end %>"
     ],
-    "description": "end"
+    "description": "ERB end tag"
   },
   "ife": {
-    "prefix": "ife",
+    "prefix": [
+      "ife"
+    ],
     "body": [
-      "<% if ${true} %>",
-      "  $1",
-      "<% else %>",
+      "<% if $1 %>",
       "  $2",
+      "<% else %>",
+      "  $3",
       "<% end %>"
     ],
-    "description": "if .. else .. end"
+    "description": "ERB if else block"
   },
   "unless": {
-    "prefix": "unless",
+    "prefix": [
+      "unless"
+    ],
     "body": [
-      "<% unless ${false} %>",
+      "<% unless $1 %>",
       "  $2",
       "<% end %>"
     ],
-    "description": "unless .. end"
+    "description": "ERB unless block"
   }
 }
