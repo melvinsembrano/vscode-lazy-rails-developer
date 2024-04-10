@@ -339,4 +339,13 @@
     ],
     "description": "ERB turbo stream from tag"
   },
+  "ERB dom_id tag": {
+    "prefix": [
+      "dom_id"
+    ],
+    "body": [
+      "<%= dom_id ${0} %>"
+    ],
+    "description": "ERB dom_id tag"
+  },
 }
