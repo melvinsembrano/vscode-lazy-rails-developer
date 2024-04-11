@@ -334,5 +334,30 @@
       "end"
     ],
     "description": "New unless statement."
-  }
+  },
+  "Concern": {
+    "prefix": [
+      "concern",
+      "con"
+    ],
+    "body": [
+      "module $1",
+      "  extend ActiveSupport::Concern",
+      "  $0",
+      "end"
+    ],
+    "description": "New Rails concern."
+  },
+  "Multiline string": {
+    "prefix": [
+      "string",
+      "str"
+    ],
+    "body": [
+      "$1 = <<~$2",
+      "  $0",
+      "$2"
+    ],
+    "description": "New multiline string."
+  },
 }
