@@ -8,7 +8,6 @@
   },
   "ERB output tag": {
     "prefix": [
-      "erb",
       "erbo",
       "erb="
     ],
@@ -19,7 +18,6 @@
   },
   "ERB Block": {
     "prefix": [
-      "erb",
       "erbb"
     ],
     "body": [
@@ -31,7 +29,6 @@
   },
   "ERB block with arguments": {
     "prefix": [
-      "erb",
       "erbbw"
     ],
     "body": [
