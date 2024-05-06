@@ -351,7 +351,7 @@
   "Multiline string": {
     "prefix": [
       "string",
-      "str"
+      "str="
     ],
     "body": [
       "$1 = <<~$2",
@@ -359,5 +359,17 @@
       "$2"
     ],
     "description": "New multiline string."
+  },
+  "Multiline string without variable": {
+    "prefix": [
+      "string",
+      "str"
+    ],
+    "body": [
+      "<<~$1",
+      "  $0",
+      "$1"
+    ],
+    "description": "New multiline string without variable."
   },
 }
